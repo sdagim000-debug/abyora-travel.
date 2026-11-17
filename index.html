@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Ethiopia and the world with Abyora Travel. Tell us where you want to go and let us help plan your journey.">
+  <meta name="theme-color" content="#102a32">
+  <title>ABYORA TRAVEL | Discover More. Travel Beyond.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Abyora Travel home">ABYORA<span>TRAVEL</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#destinations">Destinations</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#plan">Plan a trip</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">A JOURNEY BEYOND THE ORDINARY</p>
+        <h1>Discover more.<br><em>Travel beyond.</em></h1>
+        <p class="hero-copy">From the timeless treasures of Ethiopia to inspiring destinations around the world, your next story starts here.</p>
+        <a class="button button-gold" href="#plan">Plan your journey <span>↗</span></a>
+      </div>
+      <div class="hero-note"><span class="note-line"></span> MADE FOR THE CURIOUS</div>
+    </section>
+
+    <section class="intro section" id="about">
+      <p class="eyebrow">WELCOME TO ABYORA</p>
+      <h2>The world is closer<br>than you think.</h2>
+      <p>We are building a thoughtful travel experience for people who want to see more, feel more and travel with confidence. Tell us what you have in mind, and let's start planning.</p>
+    </section>
+
+    <section class="section destinations" id="destinations">
+      <div class="section-top">
+        <div><p class="eyebrow">FIND YOUR SOMEWHERE</p><h2>Places worth discovering</h2></div>
+        <p class="section-sub">A little inspiration for your next adventure.</p>
+      </div>
+      <div class="destination-grid">
+        <article class="destination-card tall">
+          <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=1100&q=85" alt="Historic stone architecture in Ethiopia" loading="lazy">
+          <div class="card-caption"><span>ETHIOPIA</span><h3>Lalibela</h3><p>History carved in stone.</p></div>
+        </article>
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=85" alt="Paris city skyline" loading="lazy">
+          <div class="card-caption"><span>FRANCE</span><h3>Paris</h3><p>Culture, art and romance.</p></div>
+        </article>
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=85" alt="Turquoise tropical sea" loading="lazy">
+          <div class="card-caption"><span>TANZANIA</span><h3>Zanzibar</h3><p>Slow days by the sea.</p></div>
+        </article>
+      </div>
+      <p class="disclaimer">Destination imagery is illustrative. Travel availability, access and conditions must be confirmed before booking.</p>
+    </section>
+
+    <section class="experiences section" id="experiences">
+      <div class="section-top">
+        <div><p class="eyebrow">TRAVEL YOUR WAY</p><h2>Start with an idea</h2></div>
+        <p class="section-sub">A few ways to imagine your next trip.</p>
+      </div>
+      <div class="experience-grid">
+        <article class="experience"><div class="experience-number">01</div><p class="eyebrow">CULTURE & HERITAGE</p><h3>Discover Ethiopia</h3><p>Explore remarkable history, traditions and landscapes across Ethiopia.</p><a href="#plan">Ask about a trip <span>↗</span></a></article>
+        <article class="experience"><div class="experience-number">02</div><p class="eyebrow">CITY ESCAPES</p><h3>See somewhere new</h3><p>Make time for the cities, food, art and moments that stay with you.</p><a href="#plan">Ask about a trip <span>↗</span></a></article>
+        <article class="experience"><div class="experience-number">03</div><p class="eyebrow">BEACH & NATURE</p><h3>Find your reset</h3><p>Trade the everyday for open skies, beautiful coastlines and fresh air.</p><a href="#plan">Ask about a trip <span>↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="plan-section" id="plan">
+      <div class="plan-copy">
+        <p class="eyebrow">LET'S MAKE IT HAPPEN</p>
+        <h2>Where will your<br><em>next story begin?</em></h2>
+        <p>Share a few details about the trip you're dreaming of. Send us an enquiry and we'll have the information needed to follow up.</p>
+        <div class="promise"><span>✦</span><p><strong>Thoughtful planning</strong><br>Tell us your priorities and we'll take it from there.</p></div>
+      </div>
+      <form class="enquiry-form" name="travel-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="travel-enquiry">
+        <p class="hidden"><label>Do not fill this out: <input name="bot-field"></label></p>
+        <div class="form-heading"><span>YOUR TRIP ENQUIRY</span><span>01 / 01</span></div>
+        <label>Your name<input type="text" name="name" placeholder="Full name" required></label>
+        <label>Email address<input type="email" name="email" placeholder="you@example.com" required></label>
+        <label>Where would you like to go?<input type="text" name="destination" placeholder="Destination or 'I'm flexible'" required></label>
+        <div class="form-row">
+          <label>Departure date<input type="date" name="departure-date"></label>
+          <label>Travellers<select name="travellers"><option value="">Select</option><option>1</option><option>2</option><option>3-4</option><option>5-8</option><option>9+</option></select></label>
+        </div>
+        <label>What kind of trip are you planning?<select name="trip-type"><option value="">Choose an option</option><option>Domestic travel in Ethiopia</option><option>International holiday</option><option>Flight enquiry</option><option>Hotel or accommodation</option><option>Tour or activity</option><option>Other</option></select></label>
+        <label>Anything else we should know?<textarea name="message" rows="3" placeholder="Tell us what you have in mind..."></textarea></label>
+        <button class="button button-dark" type="submit">Send my enquiry <span>↗</span></button>
+        <p class="form-small">This is an enquiry, not a confirmed reservation. Prices, availability and bookings are confirmed separately.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand brand-light" href="#home">ABYORA<span>TRAVEL</span></a>
+    <p class="footer-tagline">Discover More. Travel Beyond.</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> Abyora Travel</span><span>Addis Ababa, Ethiopia</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

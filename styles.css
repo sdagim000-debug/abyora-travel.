@@ -1,0 +1,72 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#142c34;--gold:#b99256;--cream:#f7f5ef;--muted:#747b79}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--cream)}
+a{color:inherit;text-decoration:none}
+.site-header{height:82px;padding:0 7.5%;display:flex;align-items:center;justify-content:space-between;background:#fff;position:relative;z-index:10}
+.brand{font-size:22px;font-weight:700;letter-spacing:2px;color:var(--ink)}
+.brand span{color:var(--gold);margin-left:5px}
+.nav{display:flex;align-items:center;gap:34px;font-size:13px;font-weight:600}
+.nav a:not(.nav-cta):hover{color:var(--gold)}
+.nav-cta{padding:13px 20px;background:var(--ink);color:white}
+.menu-toggle{display:none;border:0;background:none;font-size:25px;color:var(--ink)}
+.hero{min-height:650px;position:relative;display:flex;align-items:center;padding:90px 11%;color:white;background:url("https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=2000&q=90") center 48%/cover}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,25,31,.88),rgba(8,25,31,.18))}
+.hero-content{position:relative;max-width:690px}
+.eyebrow{font-size:10px;letter-spacing:3px;font-weight:700;color:var(--gold);margin-bottom:19px}
+h1,h2,h3{font-family:"Playfair Display",serif;font-weight:500}
+.hero h1{font-size:clamp(54px,7.3vw,92px);line-height:1.06;letter-spacing:-1.5px;margin-bottom:25px}
+em{font-style:normal;color:#d5b47d}
+.hero-copy{font-size:15px;line-height:1.9;color:#e2e7e6;max-width:490px;margin-bottom:34px}
+.button{display:inline-flex;justify-content:space-between;align-items:center;gap:35px;padding:16px 22px;border:0;font:700 12px "DM Sans",sans-serif;cursor:pointer}
+.button-gold{background:var(--gold);color:white}
+.button span{font-size:17px}
+.hero-note{position:absolute;right:7.5%;bottom:40px;font-size:9px;letter-spacing:2px;display:flex;align-items:center;gap:12px}
+.note-line{width:35px;height:1px;background:var(--gold)}
+.section{padding:105px 9%}
+.intro{text-align:center;max-width:830px;margin:auto;padding-top:115px;padding-bottom:110px}
+.intro h2,.section-top h2{font-size:clamp(36px,4.2vw,53px);line-height:1.15;margin-bottom:22px}
+.intro>p:last-child{max-width:630px;margin:auto;color:var(--muted);font-size:14px;line-height:2}
+.section-top{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:38px}
+.section-sub{color:var(--muted);font-size:13px;padding-bottom:8px}
+.destination-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:18px}
+.destination-card{height:420px;position:relative;overflow:hidden;background:#ddd}
+.destination-card.tall{height:470px;grid-row:span 1}
+.destination-card img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.destination-card:hover img{transform:scale(1.05)}
+.destination-card:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.72))}
+.card-caption{position:absolute;z-index:1;bottom:28px;left:27px;color:white}
+.card-caption span{font-size:9px;letter-spacing:2px;color:#e3c58f}
+.card-caption h3{font-size:32px;margin:7px 0}
+.card-caption p{font-size:12px;color:#e3e3e3}
+.disclaimer{font-size:10px;color:#858985;margin-top:15px}
+.experiences{background:#efede6}
+.experience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.experience{background:#fff;padding:34px 30px 32px;min-height:280px;position:relative}
+.experience-number{font-family:"Playfair Display",serif;font-size:36px;color:#e2d8c7;margin-bottom:28px}
+.experience h3{font-size:27px;margin-bottom:12px}
+.experience>p:not(.eyebrow){font-size:12px;color:var(--muted);line-height:1.8;min-height:65px}
+.experience a{display:inline-block;margin-top:22px;font-size:11px;font-weight:700;color:#9c753e}
+.experience a span{font-size:16px;margin-left:8px}
+.plan-section{background:var(--ink);color:white;padding:100px 10%;display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:center}
+.plan-copy h2{font-size:clamp(40px,5vw,62px);line-height:1.12;margin-bottom:24px}
+.plan-copy>p:not(.eyebrow){font-size:13px;line-height:1.9;color:#c3ccca;max-width:430px}
+.promise{display:flex;gap:14px;margin-top:38px;align-items:flex-start}
+.promise>span{color:var(--gold);font-size:24px}
+.promise p{font-size:11px;line-height:1.8;color:#b9c4c1}
+.promise strong{color:white;font-size:12px}
+.enquiry-form{background:#fff;color:var(--ink);padding:34px;display:grid;gap:15px}
+.form-heading{display:flex;justify-content:space-between;padding-bottom:17px;border-bottom:1px solid #e8e5de;margin-bottom:4px;font-size:9px;letter-spacing:2px;font-weight:700;color:#9a7948}
+.enquiry-form label{display:grid;gap:7px;font-size:10px;font-weight:700;color:#42535a}
+.enquiry-form input,.enquiry-form select,.enquiry-form textarea{width:100%;padding:12px;border:1px solid #e2e2dc;background:#fbfaf7;font:12px "DM Sans",sans-serif;color:var(--ink);border-radius:0}
+.enquiry-form textarea{resize:vertical}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.button-dark{background:var(--gold);color:white;width:100%;margin-top:3px}
+.form-small{font-size:9px;color:#858985;line-height:1.6}
+.hidden{display:none}
+.footer{background:#0b2027;color:white;padding:48px 8% 25px;text-align:center}
+.brand-light{color:white}
+.footer-tagline{font-family:"Playfair Display",serif;font-size:19px;color:#c9b18a;margin-top:14px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.13);margin-top:35px;padding-top:20px;display:flex;justify-content:space-between;color:#9eacad;font-size:10px}
+@media(max-width:850px){.site-header{padding:0 6%;height:72px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:white;padding:24px 6%;flex-direction:column;align-items:flex-start;gap:22px}.nav.open{display:flex}.hero{min-height:590px;padding:70px 7%}.section{padding:75px 7%}.destination-grid{grid-template-columns:1fr 1fr}.destination-card,.destination-card.tall{height:350px}.destination-card:first-child{grid-column:span 2}.experience-grid{grid-template-columns:1fr}.experience{min-height:0}.experience>p:not(.eyebrow){min-height:0}.plan-section{grid-template-columns:1fr;padding:75px 7%;gap:40px}}
+@media(max-width:520px){.hero{min-height:560px}.hero h1{font-size:54px}.section-top{display:block}.section-sub{margin-top:10px}.destination-grid{grid-template-columns:1fr}.destination-card:first-child{grid-column:auto}.destination-card,.destination-card.tall{height:380px}.enquiry-form{padding:23px}.footer-bottom{flex-direction:column;gap:12px}}
